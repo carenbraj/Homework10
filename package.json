@@ -1,0 +1,29 @@
+{
+  "name": "homework10",
+  "version": "1.0.0",
+  "description": "Unit 10 OOP Homework: Template Engine - Employee Summary",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carenbraj/Homework10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carenbraj/Homework10/issues"
+  },
+  "homepage": "https://github.com/carenbraj/Homework10#readme",
+  "dependencies": {
+    "inquire": "^0.4.8"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}

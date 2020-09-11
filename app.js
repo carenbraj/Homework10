@@ -47,7 +47,7 @@ function createTeam() {
                     break;
 
                 case "No more employees":
-                    render(teamMembers);
+                    buildTeam();
                     break
 
             }
@@ -180,7 +180,10 @@ function createTeam() {
     }
     function buildTeam() {
         // write team members to a html file
-        fs.writeFileSync(outputPath, mainHTML(teamMembers), 'utf-8');
+        if (!fs.existsSync(OUTPUT_DIR)) {
+            fs.mkdirSync(OUTPUT_DIR)
+        }
+        fs.writeFileSync(outputPath, render(teamMembers), 'utf-8');
       }
 }
 
